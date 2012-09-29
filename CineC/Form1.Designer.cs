@@ -96,17 +96,6 @@
             // 
             this.comboBoxGen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGen.FormattingEnabled = true;
-            this.comboBoxGen.Items.AddRange(new object[] {
-            "Selecione...",
-            "Ação",
-            "Aventura",
-            "Comédia",
-            "Terror",
-            "Suspense",
-            "Documentário",
-            "Infantil",
-            "Romance",
-            "Ficção Científica"});
             this.comboBoxGen.Location = new System.Drawing.Point(527, 73);
             this.comboBoxGen.Name = "comboBoxGen";
             this.comboBoxGen.Size = new System.Drawing.Size(235, 21);
