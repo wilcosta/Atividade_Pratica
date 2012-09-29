@@ -434,5 +434,25 @@ namespace CineC
             novoItem.SubItems.Add(SubitemData);
             listViewFilmesPesq.Items.Add(novoItem);
         }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            listViewFilmesPesq.Items.Clear();
+            textBoxNome.Text = "";
+            textBoxLocal.Text = "";
+            comboBoxGen.SelectedIndex = 0;
+            dateTimePickerData1.Value = DateTime.Now;
+            dateTimePickerData2.Value = DateTime.Now;
+            checkBoxData.Checked = false;
+            checkBoxGen.Checked = false;
+            checkBoxLocal.Checked = false;
+            checkBoxNome.Checked = false;
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+  
     }
 }

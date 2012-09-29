@@ -244,6 +244,7 @@
             this.buttonCancelar.TabIndex = 33;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // label2
             // 
@@ -262,6 +263,7 @@
             this.buttonLimpar.TabIndex = 35;
             this.buttonLimpar.Text = "Limpar";
             this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
             // Form2
             // 
