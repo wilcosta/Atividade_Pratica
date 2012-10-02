@@ -37,7 +37,6 @@ namespace CineC
                 MessageBox.Show("Favor preencher todos os campos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             else
-
             {
                 novoItem = new ListViewItem();
                 novoItem.Text = textBoxNome.Text;
@@ -111,9 +110,9 @@ namespace CineC
         public void EditItem()
         {
 
-        // Método para edição dos itens, verifica se foi adicionado algum item do ListView. Serão passados os valores de cada coluna do ListView aos campos compatíveis
+        // Método para edição dos itens, verifica se foi selecionado algum item do ListView. Serão passados os valores de cada coluna do ListView aos campos compatíveis
             
-            if (listViewFilmes.SelectedItems.Count != 0)
+            if (listViewFilmes.SelectedItems.Count == 1)
             {
                 buttonSalvar.Visible = true;
                 buttonAdicionar.Enabled = false;
@@ -125,7 +124,9 @@ namespace CineC
                 textBoxLocal.Text = listViewFilmes.SelectedItems[0].SubItems[2].Text;
 
                 dateTimePickerData.Value = DateTime.Parse(listViewFilmes.SelectedItems[0].SubItems[3].Text);
-            }  
+            }
+            else
+                MessageBox.Show("Você deve selecionar um item de cada vez!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
